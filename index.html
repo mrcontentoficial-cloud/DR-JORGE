@@ -787,28 +787,34 @@ menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   burger.classList.remove('open'); menu.classList.remove('open');
 }));
 
-/* Reveal al hacer scroll */
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-/* Contador de estadísticas */
-const counters = document.querySelectorAll('[data-count]');
-const cio = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    const el = e.target, end = +el.dataset.count, suf = el.dataset.suffix || '';
-    let cur = 0; const step = Math.max(1, Math.floor(end / 60));
-    const t = setInterval(() => {
-      cur += step;
-      if (cur >= end) { cur = end; clearInterval(t); }
-      el.textContent = cur + suf;
-    }, 22);
-    cio.unobserve(el);
+/* Reveal + contadores: por posición de scroll (robusto, sin depender de
+   IntersectionObserver, que no siempre dispara). Revela lo visible al cargar
+   y al hacer scroll, de modo que el contenido NUNCA queda invisible. */
+function animateCounter(el){
+  if (el.dataset.done) return; el.dataset.done = '1';
+  const end = +el.dataset.count, suf = el.dataset.suffix || '';
+  let cur = 0; const step = Math.max(1, Math.ceil(end / 60));
+  const t = setInterval(() => {
+    cur += step;
+    if (cur >= end) { cur = end; clearInterval(t); }
+    el.textContent = cur + suf;
+  }, 22);
+}
+function sweep(){
+  const vh = innerHeight || document.documentElement.clientHeight;
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top < vh * 0.95 && r.bottom > 0) el.classList.add('in');
   });
-}, { threshold: 0.5 });
-counters.forEach(c => cio.observe(c));
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top < vh * 0.9 && r.bottom > 0) animateCounter(el);
+  });
+}
+sweep();
+addEventListener('load', sweep);
+addEventListener('scroll', sweep, { passive: true });
+addEventListener('resize', sweep);
 
 /* Año footer */
 document.getElementById('year').textContent = new Date().getFullYear();
