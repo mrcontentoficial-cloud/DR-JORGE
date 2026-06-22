@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0E8C6A" />
+
+<!-- ====== SEO ====== -->
+<title>Dr. Jorge | Cirujano Gastrointestinal y Laparoscópico en León, Gto.</title>
+<meta name="description" content="Dr. Jorge — Cirujano especialista en cirugía gastrointestinal y laparoscópica (mínimamente invasiva) en León, Guanajuato. Vesícula, hernias, reflujo y más. Agenda tu valoración: +52 477 541 5614." />
+<meta name="keywords" content="cirujano León, cirugía laparoscópica León, cirujano gastrointestinal, cirugía de vesícula León, operación de hernia León, cirujano Guanajuato, Dr. Jorge cirujano" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Dr. Jorge" />
+<link rel="canonical" href="https://dr-jorge.com/" />
+
+<!-- ====== Open Graph / Redes ====== -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_MX" />
+<meta property="og:title" content="Dr. Jorge | Cirujano Gastrointestinal y Laparoscópico" />
+<meta property="og:description" content="Cirugía mínimamente invasiva con atención humana y personalizada en León, Guanajuato. Agenda tu valoración: +52 477 541 5614." />
+<meta property="og:site_name" content="Dr. Jorge" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Dr. Jorge | Cirujano Gastrointestinal y Laparoscópico" />
+<meta name="twitter:description" content="Cirugía mínimamente invasiva en León, Guanajuato. Agenda: +52 477 541 5614." />
+
+<!-- ====== Favicon (SVG inline) ====== -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230E8C6A'/%3E%3Cpath d='M50 22v56M22 50h56' stroke='white' stroke-width='12' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+<!-- ====== Fuentes ====== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- ====== Datos estructurados (Google) ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dr. Jorge",
+  "description": "Cirujano especialista en cirugía gastrointestinal y laparoscópica (mínimamente invasiva).",
+  "medicalSpecialty": "Surgical",
+  "telephone": "+52-477-541-5614",
+  "areaServed": {
+    "@type": "City",
+    "name": "León, Guanajuato, México"
+  },
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "Cirugía laparoscópica de vesícula" },
+    { "@type": "MedicalProcedure", "name": "Reparación de hernias" },
+    { "@type": "MedicalProcedure", "name": "Cirugía de reflujo gastroesofágico" },
+    { "@type": "MedicalProcedure", "name": "Cirugía gastrointestinal" }
+  ],
+  "knowsLanguage": "es"
+}
+</script>
+
+<style>
+/* =========================================================
+   VARIABLES — Cambia el verde aquí (1 línea) cuando subas tu HTML
+   ========================================================= */
+:root{
+  --brand:        #0E8C6A;   /* verde principal */
+  --brand-dark:   #0A5E47;   /* verde profundo */
+  --brand-darker: #073B2D;
+  --brand-light:  #16B88A;   /* verde claro */
+  --mint:         #7CE0BE;   /* menta acento */
+  --mint-soft:    #D6F5E9;
+
+  --ink:    #0C1F19;
+  --body:   #3A4B45;
+  --muted:  #6B7B74;
+  --line:   #E2EFE9;
+  --bg:     #F4FBF8;
+  --bg-2:   #EAF7F1;
+  --white:  #ffffff;
+
+  --shadow-sm: 0 2px 10px rgba(7,59,45,.06);
+  --shadow:    0 18px 50px -18px rgba(7,59,45,.28);
+  --shadow-lg: 0 40px 90px -30px rgba(7,59,45,.38);
+
+  --radius:   22px;
+  --radius-sm:14px;
+  --maxw: 1180px;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);
+  color:var(--body);
+  background:var(--bg);
+  line-height:1.65;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--font-display);color:var(--ink);line-height:1.12;letter-spacing:-.02em}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+section{position:relative}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* ===== Botones ===== */
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;justify-content:center;
+  font-family:var(--font-display);font-weight:700;font-size:.98rem;
+  padding:.95rem 1.6rem;border-radius:999px;border:none;cursor:pointer;
+  transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  white-space:nowrap;
+}
+.btn svg{width:1.15em;height:1.15em}
+.btn-primary{background:linear-gradient(135deg,var(--brand-light),var(--brand));color:#fff;box-shadow:0 12px 30px -10px rgba(14,140,106,.7)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -12px rgba(14,140,106,.75)}
+.btn-wa{background:#25D366;color:#fff;box-shadow:0 12px 30px -10px rgba(37,211,102,.6)}
+.btn-wa:hover{transform:translateY(-3px)}
+.btn-ghost{background:var(--white);color:var(--brand-dark);border:1.5px solid var(--line);box-shadow:var(--shadow-sm)}
+.btn-ghost:hover{transform:translateY(-3px);border-color:var(--brand-light);color:var(--brand)}
+.btn-lg{padding:1.1rem 2rem;font-size:1.05rem}
+
+/* ===== NAV ===== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:18px 0;transition:.3s ease;
+}
+.nav.scrolled{
+  background:rgba(244,251,248,.82);backdrop-filter:blur(14px);
+  padding:11px 0;box-shadow:0 6px 24px -16px rgba(7,59,45,.4);
+  border-bottom:1px solid rgba(226,239,233,.7);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--font-display);font-weight:800;font-size:1.25rem;color:var(--ink)}
+.brand .logo{
+  width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--brand-light),var(--brand-dark));color:#fff;
+  box-shadow:0 8px 18px -6px rgba(14,140,106,.6);
+}
+.brand .logo svg{width:22px;height:22px}
+.brand b{color:var(--brand)}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-weight:600;font-size:.95rem;color:var(--body);transition:.2s;position:relative}
+.nav-links a:hover{color:var(--brand)}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--brand);transition:.25s;border-radius:2px}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:.7rem}
+.burger{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;border-radius:12px}
+.burger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px auto;border-radius:3px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* ===== HERO ===== */
+.hero{
+  padding:170px 0 90px;position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 600px at 85% -5%, var(--mint-soft) 0%, transparent 60%),
+    radial-gradient(900px 700px at -10% 110%, var(--bg-2) 0%, transparent 55%),
+    var(--bg);
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--white);border:1px solid var(--line);
+  color:var(--brand-dark);font-weight:700;font-size:.82rem;letter-spacing:.02em;
+  padding:.5rem 1rem;border-radius:999px;box-shadow:var(--shadow-sm);
+}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--brand-light);box-shadow:0 0 0 4px rgba(22,184,138,.22);animation:pulse 2s infinite}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:800;margin:1.3rem 0 .4rem}
+.hero h1 .grad{background:linear-gradient(120deg,var(--brand-light),var(--brand-dark));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .role{font-family:var(--font-display);font-weight:700;font-size:clamp(1.05rem,2.4vw,1.5rem);color:var(--brand);margin-bottom:1.1rem}
+.hero p.lead{font-size:1.12rem;color:var(--body);max-width:520px;margin-bottom:1.7rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.5rem}
+.hero-note{display:flex;align-items:center;gap:.55rem;color:var(--muted);font-size:.92rem;font-weight:500}
+.hero-note svg{width:18px;height:18px;color:var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+.chip{display:inline-flex;align-items:center;gap:.5rem;background:var(--white);border:1px solid var(--line);padding:.55rem .95rem;border-radius:12px;font-size:.88rem;font-weight:600;color:var(--brand-dark);box-shadow:var(--shadow-sm)}
+.chip svg{width:16px;height:16px;color:var(--brand-light)}
+
+/* Hero media (placeholder de foto) */
+.hero-media{position:relative}
+.photo-card{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  aspect-ratio:4/5;background:linear-gradient(160deg,var(--brand-dark),var(--brand-darker));
+  box-shadow:var(--shadow-lg);border:8px solid #fff;
+}
+.photo-ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:.7rem;text-align:center;padding:2rem;color:rgba(255,255,255,.92)}
+.photo-ph .pic{width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;border:2px dashed rgba(255,255,255,.4)}
+.photo-ph .pic svg{width:60px;height:60px;opacity:.85}
+.photo-ph small{font-size:.78rem;opacity:.75;max-width:220px;line-height:1.4}
+.photo-ph strong{font-family:var(--font-display);font-size:1.05rem}
+.float-badge{
+  position:absolute;background:var(--white);border-radius:16px;padding:.85rem 1.1rem;
+  box-shadow:var(--shadow);display:flex;align-items:center;gap:.75rem;
+}
+.float-badge .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--mint-soft);color:var(--brand-dark)}
+.float-badge .ic svg{width:22px;height:22px}
+.float-badge b{display:block;font-family:var(--font-display);color:var(--ink);font-size:1.15rem;line-height:1}
+.float-badge span{font-size:.78rem;color:var(--muted)}
+.fb-1{top:8%;left:-26px;animation:floaty 5s ease-in-out infinite}
+.fb-2{bottom:11%;right:-22px;animation:floaty 5s ease-in-out infinite .8s}
+.blob{position:absolute;border-radius:50%;filter:blur(8px);z-index:-1}
+.blob.b1{width:280px;height:280px;background:radial-gradient(circle,var(--mint) 0%,transparent 70%);top:-40px;right:-40px;opacity:.6;animation:floaty 7s ease-in-out infinite}
+
+/* ===== Barra de confianza ===== */
+.trust{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center}
+.trust-grid .t b{font-family:var(--font-display);font-size:1.05rem;color:var(--ink);display:flex;align-items:center;justify-content:center;gap:.5rem}
+.trust-grid .t b svg{width:20px;height:20px;color:var(--brand)}
+.trust-grid .t span{font-size:.85rem;color:var(--muted)}
+
+/* ===== Secciones genéricas ===== */
+.section{padding:90px 0}
+.section.alt{background:var(--white)}
+.head{max-width:680px;margin:0 auto 56px;text-align:center}
+.head .kicker{color:var(--brand);font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.head h2{font-size:clamp(2rem,4.2vw,2.9rem);font-weight:800;margin:.6rem 0 .8rem}
+.head p{color:var(--muted);font-size:1.08rem}
+
+/* ===== Servicios ===== */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:2rem 1.8rem;transition:.3s ease;position:relative;overflow:hidden;
+}
+.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--brand-light),var(--brand));transform:scaleX(0);transform-origin:left;transition:.35s}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
+.card:hover::before{transform:scaleX(1)}
+.card .ic{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--mint-soft),#fff);color:var(--brand-dark);margin-bottom:1.2rem;border:1px solid var(--line)}
+.card .ic svg{width:30px;height:30px}
+.card h3{font-size:1.2rem;margin-bottom:.5rem}
+.card p{font-size:.95rem;color:var(--muted)}
+
+/* ===== Por qué / diferenciadores ===== */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.why-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative;aspect-ratio:4/3;background:var(--bg-2)}
+.why-media img{width:100%;height:100%;object-fit:cover}
+.why-media .fallback{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(160deg,var(--brand),var(--brand-darker));color:#fff}
+.why-media .fallback svg{width:90px;height:90px;opacity:.5}
+.why-media .illus-svg{position:absolute;inset:0;width:100%;height:100%}
+.illus-label{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.93);color:var(--brand-dark);font-family:var(--font-display);font-weight:700;font-size:.85rem;padding:.45rem .9rem;border-radius:999px;box-shadow:var(--shadow-sm)}
+.feature{display:flex;gap:1.1rem;margin-bottom:1.6rem}
+.feature .ic{flex:none;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:var(--mint-soft);color:var(--brand-dark)}
+.feature .ic svg{width:26px;height:26px}
+.feature h4{font-size:1.1rem;margin-bottom:.25rem}
+.feature p{font-size:.94rem;color:var(--muted)}
+
+/* ===== Stats ===== */
+.stats{background:linear-gradient(135deg,var(--brand-dark),var(--brand-darker));color:#fff;border-radius:var(--radius);padding:3rem 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;position:relative;overflow:hidden}
+.stats::after{content:'';position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(124,224,190,.25),transparent 70%);top:-120px;right:-80px}
+.stat b{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,3rem);font-weight:800;display:block;line-height:1}
+.stat span{font-size:.92rem;opacity:.82}
+
+/* ===== Proceso ===== */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2rem;position:relative}
+.step .num{font-family:var(--font-display);font-weight:800;font-size:1.1rem;width:46px;height:46px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;margin-bottom:1rem}
+.step h4{font-size:1.15rem;margin-bottom:.4rem}
+.step p{font-size:.94rem;color:var(--muted)}
+
+/* ===== Testimonios ===== */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.tcard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2rem;display:flex;flex-direction:column;gap:1rem}
+.tcard .stars{color:#F5B301;letter-spacing:2px;font-size:1.05rem}
+.tcard p{font-style:italic;color:var(--body)}
+.tcard .who{display:flex;align-items:center;gap:.8rem;margin-top:auto}
+.tcard .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--brand-light),var(--brand-dark));color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-weight:700}
+.tcard .who b{font-family:var(--font-display);color:var(--ink);font-size:.95rem}
+.tcard .who span{font-size:.82rem;color:var(--muted)}
+
+/* ===== CONTACTO ===== */
+.contact{padding:90px 0;background:
+  radial-gradient(800px 500px at 100% 0%,var(--mint-soft),transparent 60%),var(--bg)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.contact h2{font-size:clamp(2rem,4.2vw,2.8rem);font-weight:800;margin-bottom:1rem}
+.contact .lead{color:var(--muted);font-size:1.08rem;margin-bottom:2rem}
+.cinfo{display:flex;gap:1rem;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-sm);padding:1.2rem 1.3rem;margin-bottom:1rem;transition:.25s}
+.cinfo:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.cinfo .ic{flex:none;width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:var(--mint-soft);color:var(--brand-dark)}
+.cinfo .ic svg{width:24px;height:24px}
+.cinfo .x b{display:block;font-family:var(--font-display);color:var(--ink);font-size:1rem}
+.cinfo .x span{font-size:.92rem;color:var(--muted)}
+.cinfo .pill{font-size:.72rem;font-weight:700;color:var(--brand-dark);background:var(--mint-soft);padding:.2rem .6rem;border-radius:999px;margin-left:.4rem;vertical-align:middle}
+
+.form{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+.form h3{font-size:1.35rem;margin-bottom:.4rem}
+.form > p{color:var(--muted);font-size:.93rem;margin-bottom:1.4rem}
+.field{margin-bottom:1rem}
+.field label{display:block;font-weight:600;font-size:.88rem;color:var(--ink);margin-bottom:.4rem}
+.field input,.field textarea,.field select{
+  width:100%;padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:12px;
+  font-family:var(--font-body);font-size:.97rem;color:var(--ink);background:var(--bg);transition:.2s;
+}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brand-light);background:#fff;box-shadow:0 0 0 4px rgba(22,184,138,.12)}
+.field textarea{resize:vertical;min-height:90px}
+.form .btn{width:100%;margin-top:.4rem}
+.form .micro{text-align:center;font-size:.8rem;color:var(--muted);margin-top:.9rem}
+
+/* ===== Banner CTA ===== */
+.cta-banner{background:linear-gradient(135deg,var(--brand),var(--brand-dark));border-radius:var(--radius);padding:clamp(2.4rem,5vw,3.6rem);text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 70%);top:-180px;left:-100px}
+.cta-banner h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:.8rem}
+.cta-banner p{opacity:.92;max-width:560px;margin:0 auto 1.8rem;font-size:1.08rem}
+.cta-banner .btn-wa{background:#fff;color:var(--brand-dark)}
+
+/* ===== Footer ===== */
+.footer{background:var(--brand-darker);color:rgba(255,255,255,.78);padding:60px 0 28px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.footer .brand{color:#fff;margin-bottom:1rem}
+.footer p{font-size:.92rem;line-height:1.7}
+.footer h5{color:#fff;font-family:var(--font-display);font-size:1rem;margin-bottom:1rem}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:.6rem}
+.footer ul a{font-size:.92rem;transition:.2s;display:inline-flex;align-items:center;gap:.5rem}
+.footer ul a:hover{color:var(--mint)}
+.footer ul a svg{width:16px;height:16px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.85rem;opacity:.7}
+
+/* ===== Botón flotante WhatsApp ===== */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.7);animation:floaty 3.5s ease-in-out infinite;transition:transform .25s}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:32px;height:32px;color:#fff}
+
+/* ===== Animaciones ===== */
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(22,184,138,.5)}50%{box-shadow:0 0 0 8px rgba(22,184,138,0)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ===== Responsive ===== */
+.nav-cta-mobile{display:none}
+
+@media(max-width:980px){
+  /* El menú horizontal colapsa a menú hamburguesa */
+  .nav-links{
+    position:fixed;inset:0 0 auto 0;top:0;flex-direction:column;background:var(--white);
+    padding:90px 30px 30px;gap:1.4rem;transform:translateY(-120%);transition:.35s ease;
+    box-shadow:var(--shadow);height:auto;align-items:stretch;text-align:center;
+  }
+  .nav-links.open{transform:translateY(0)}
+  .nav-links .nav-cta-mobile{display:block}
+  .nav-links .nav-cta-mobile .btn{width:100%}
+  .burger{display:block}
+  .nav .nav-cta .btn{display:none}
+}
+@media(max-width:920px){
+  .hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-media{width:100%;max-width:420px;margin:0 auto;order:-1}
+  .cards,.steps,.tcards{grid-template-columns:1fr 1fr}
+  .trust-grid,.stats{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .cards,.steps,.tcards,.trust-grid,.stats,.footer-grid{grid-template-columns:1fr}
+  .hero{padding-top:130px}
+  .float-badge{display:none}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#inicio" class="brand">
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      </span>
+      Dr.&nbsp;<b>Jorge</b>
+    </a>
+    <ul class="nav-links" id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#especialidad">Especialidad</a></li>
+      <li><a href="#procedimientos">Procedimientos</a></li>
+      <li><a href="#por-que">Por qué elegirme</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li class="nav-cta-mobile"><a class="btn btn-wa" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">Agendar por WhatsApp</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="#contacto">Agendar valoración</a>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow reveal"><span class="dot"></span> Cirugía mínimamente invasiva · León, Gto.</span>
+      <h1 class="reveal d1">Dr. <span class="grad">Jorge</span></h1>
+      <div class="role reveal d1">Cirujano Gastrointestinal y Laparoscópico</div>
+      <p class="lead reveal d2">Atención quirúrgica de alta especialidad con técnicas mínimamente invasivas: menos dolor, recuperación más rápida y un trato humano de principio a fin.</p>
+      <div class="hero-cta reveal d3">
+        <a class="btn btn-wa btn-lg" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.04c-.24.68-1.42 1.32-1.95 1.36-.5.04-.95.22-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.44-1.08-2.75s.68-1.95.93-2.22c.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.13.12.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.43 1.78.98.88 1.81 1.15 2.07 1.28.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.24.09 1.56.74 1.83.87.27.13.45.2.51.31.07.11.07.62-.17 1.31Z"/></svg>
+          WhatsApp directo
+        </a>
+        <a class="btn btn-ghost btn-lg" href="tel:+524775415614">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 5c0-1.1.9-2 2-2h2.5c.5 0 .9.34 1 .82l.9 4a1 1 0 0 1-.29.95l-1.7 1.7a14 14 0 0 0 6.1 6.1l1.7-1.7a1 1 0 0 1 .95-.29l4 .9c.48.11.82.5.82 1V19a2 2 0 0 1-2 2h-1C9.7 21 3 14.3 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          477 541 5614
+        </a>
+      </div>
+      <div class="hero-note reveal d3">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Respondemos en minutos · Valoración personalizada
+      </div>
+      <div class="chips reveal d4">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Cirugía laparoscópica</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Recuperación rápida</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Atención personalizada</span>
+      </div>
+    </div>
+
+    <div class="hero-media reveal d2">
+      <div class="blob b1"></div>
+      <div class="photo-card">
+        <!-- Reemplaza este placeholder por la foto profesional del Dr. Jorge:
+             <img src="assets/dr-jorge.jpg" alt="Dr. Jorge, cirujano" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"> -->
+        <div class="photo-ph">
+          <div class="pic">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <strong>Foto del Dr. Jorge</strong>
+          <small>Espacio para la fotografía profesional (bata / consultorio). Reemplázala en <code>assets/dr-jorge.jpg</code>.</small>
+        </div>
+      </div>
+      <div class="float-badge fb-1">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.95 5.5L12 16.5 7.05 18.2 8 12.7l-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <div><b>+1,000</b><span>cirugías realizadas*</span></div>
+      </div>
+      <div class="float-badge fb-2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <div><b>Certificado</b><span>Consejo Mexicano*</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST BAR ================= -->
+<section class="trust">
+  <div class="wrap trust-grid">
+    <div class="t reveal"><b><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.95 5.5L12 16.5 7.05 18.2 8 12.7l-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> Alta especialidad</b><span>Cirugía gastrointestinal</span></div>
+    <div class="t reveal d1"><b><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Mínimamente invasiva</b><span>Técnica laparoscópica</span></div>
+    <div class="t reveal d2"><b><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg> Trato humano</b><span>Acompañamiento cercano</span></div>
+    <div class="t reveal d3"><b><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Respuesta ágil</b><span>Agenda en minutos</span></div>
+  </div>
+</section>
+
+<!-- ================= ESPECIALIDAD ================= -->
+<section class="section" id="especialidad">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Especialidad</span>
+      <h2 class="reveal d1">Cirugía del aparato digestivo, con tecnología de hoy</h2>
+      <p class="reveal d2">El Dr. Jorge se especializa en resolver padecimientos del sistema digestivo mediante cirugía laparoscópica: incisiones pequeñas, menor dolor y un regreso más pronto a tu vida diaria.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-media reveal">
+        <!-- Ilustración autocontenida. Para usar una foto real reemplaza el <svg> por:
+             <img src="assets/quirofano.jpg" alt="Quirófano" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"> -->
+        <svg class="illus-svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cirugía laparoscópica mínimamente invasiva">
+          <defs><linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--brand-dark)"/><stop offset="1" stop-color="var(--brand-darker)"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#gA)"/>
+          <circle cx="350" cy="40" r="90" fill="var(--mint)" opacity=".12"/>
+          <circle cx="55" cy="270" r="70" fill="var(--brand-light)" opacity=".14"/>
+          <rect x="96" y="64" width="208" height="120" rx="14" fill="#fff" opacity=".07"/>
+          <rect x="96" y="64" width="208" height="120" rx="14" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"/>
+          <polyline points="112,138 140,138 152,110 168,158 184,124 200,138 288,138" fill="none" stroke="var(--mint)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="196" y="184" width="8" height="34" fill="#fff" opacity=".25"/>
+          <rect x="168" y="218" width="64" height="8" rx="4" fill="#fff" opacity=".25"/>
+          <g fill="var(--mint)"><circle cx="150" cy="252" r="5"/><circle cx="200" cy="264" r="5"/><circle cx="250" cy="252" r="5"/></g>
+          <g stroke="#fff" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"><path d="M332 236v26M319 249h26"/></g>
+        </svg>
+        <span class="illus-label">Cirugía mínimamente invasiva</span>
+      </div>
+      <div>
+        <div class="feature reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h4>Diagnóstico claro y honesto</h4><p>Te explicamos tu padecimiento y las opciones reales de tratamiento, sin tecnicismos y sin presiones.</p></div>
+        </div>
+        <div class="feature reveal d1">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 12l2 2 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h4>Cirugía laparoscópica</h4><p>Procedimientos por mínima incisión que reducen el riesgo, el dolor y el tiempo de hospitalización.</p></div>
+        </div>
+        <div class="feature reveal d2">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg></span>
+          <div><h4>Seguimiento postoperatorio</h4><p>Acompañamiento durante toda tu recuperación para que sanes con tranquilidad y confianza.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCEDIMIENTOS ================= -->
+<section class="section alt" id="procedimientos">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Procedimientos</span>
+      <h2 class="reveal d1">¿En qué te puedo ayudar?</h2>
+      <p class="reveal d2">Algunos de los padecimientos que trato con mayor frecuencia. Si tu caso no aparece aquí, escríbeme y lo valoramos.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4 0 7 3 7 7 0 5-7 11-7 11S5 15 5 10c0-4 3-7 7-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+        <h3>Vesícula biliar</h3>
+        <p>Cirugía laparoscópica de cálculos y colecistitis (extirpación de vesícula) con recuperación rápida.</p>
+      </div>
+      <div class="card reveal d1">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M8 8c0 2 8 2 8 0M8 16c0 2 8 2 8 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <h3>Hernias</h3>
+        <p>Reparación de hernias inguinales, umbilicales y de pared abdominal con malla y técnica mínimamente invasiva.</p>
+      </div>
+      <div class="card reveal d2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4c-3 0-5 2-5 5 0 4 5 11 5 11s5-7 5-11c0-3-2-5-5-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <h3>Reflujo y hernia hiatal</h3>
+        <p>Tratamiento quirúrgico del reflujo gastroesofágico cuando los medicamentos ya no son suficientes.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <h3>Apéndice</h3>
+        <p>Apendicectomía laparoscópica de urgencia, con atención oportuna para evitar complicaciones.</p>
+      </div>
+      <div class="card reveal d1">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 9h6M9 13h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <h3>Cirugía gastrointestinal</h3>
+        <p>Padecimientos de estómago, intestino y colon que requieren manejo quirúrgico especializado.</p>
+      </div>
+      <div class="card reveal d2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <h3>Valoración quirúrgica</h3>
+        <p>¿No sabes si necesitas cirugía? Agenda una consulta y recibe una segunda opinión confiable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POR QUÉ ELEGIRME ================= -->
+<section class="section" id="por-que">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Por qué elegirme</span>
+      <h2 class="reveal d1">Cirugía segura, con un trato que se siente diferente</h2>
+    </div>
+    <div class="why-grid">
+      <div>
+        <div class="feature reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.95 5.5L12 16.5 7.05 18.2 8 12.7l-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+          <div><h4>Experiencia comprobada</h4><p>Años dedicados a la cirugía gastrointestinal y laparoscópica con resultados que respaldan cada decisión.*</p></div>
+        </div>
+        <div class="feature reveal d1">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h4>Tecnología de vanguardia</h4><p>Equipo laparoscópico de última generación para procedimientos más precisos y seguros.</p></div>
+        </div>
+        <div class="feature reveal d2">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM4 21c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h4>Cercanía real</h4><p>Resuelvo tus dudas con calma y honestidad. Aquí no eres un número, eres una persona.</p></div>
+        </div>
+        <div class="feature reveal d3">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          <div><h4>Atención oportuna</h4><p>Disponibilidad para urgencias quirúrgicas y citas con tiempos de espera cortos.</p></div>
+        </div>
+      </div>
+      <div class="why-media reveal d1">
+        <!-- Ilustración autocontenida. Para foto real reemplaza el <svg> por un <img> con object-fit:cover -->
+        <svg class="illus-svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atención humana al paciente">
+          <defs><linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--mint-soft)"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#gB)"/>
+          <circle cx="58" cy="48" r="70" fill="var(--brand-light)" opacity=".12"/>
+          <circle cx="352" cy="262" r="82" fill="var(--mint)" opacity=".22"/>
+          <path d="M200 208c-48-29-78-56-78-92a42 42 0 0 1 78-17 42 42 0 0 1 78 17c0 36-30 63-78 92Z" fill="var(--brand)"/>
+          <g stroke="#fff" stroke-width="9" stroke-linecap="round"><path d="M200 92v40M180 112h40"/></g>
+          <path d="M116 198c0 0 36 40 84 40s84-40 84-40" fill="none" stroke="var(--brand-dark)" stroke-opacity=".32" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <span class="illus-label">Atención humana y cercana</span>
+      </div>
+    </div>
+
+    <div style="margin-top:56px" class="reveal">
+      <div class="stats">
+        <div class="stat"><b data-count="1000" data-suffix="+">0</b><span>Cirugías realizadas*</span></div>
+        <div class="stat"><b data-count="15" data-suffix="+">0</b><span>Años de experiencia*</span></div>
+        <div class="stat"><b data-count="98" data-suffix="%">0</b><span>Pacientes satisfechos*</span></div>
+        <div class="stat"><b data-count="24" data-suffix="h">0</b><span>Respuesta a urgencias</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESO ================= -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Cómo agendar</span>
+      <h2 class="reveal d1">Tu cita en 3 pasos sencillos</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">1</div>
+        <h4>Escríbeme o llámame</h4>
+        <p>Cuéntame tu caso por WhatsApp o teléfono. Te oriento sobre el siguiente paso sin compromiso.</p>
+      </div>
+      <div class="step reveal d1">
+        <div class="num">2</div>
+        <h4>Valoración personalizada</h4>
+        <p>Revisamos tus estudios y tu historia clínica para definir el mejor tratamiento para ti.</p>
+      </div>
+      <div class="step reveal d2">
+        <div class="num">3</div>
+        <h4>Tratamiento y seguimiento</h4>
+        <p>Si requieres cirugía, te acompaño antes, durante y después de tu recuperación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIOS ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Pacientes</span>
+      <h2 class="reveal d1">Lo que dicen quienes confiaron</h2>
+      <p class="reveal d2">Testimonios de ejemplo — se reemplazarán por reseñas reales de pacientes.</p>
+    </div>
+    <div class="tcards">
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Me explicó todo con calma y la operación de vesícula salió perfecta. En pocos días ya estaba haciendo mi vida normal."</p>
+        <div class="who"><span class="av">MG</span><div><b>María G.</b><span>Cirugía de vesícula</span></div></div>
+      </div>
+      <div class="tcard reveal d1">
+        <div class="stars">★★★★★</div>
+        <p>"Muy profesional y humano. Me dio confianza desde la primera consulta y el seguimiento fue excelente."</p>
+        <div class="who"><span class="av">JR</span><div><b>Juan R.</b><span>Reparación de hernia</span></div></div>
+      </div>
+      <div class="tcard reveal d2">
+        <div class="stars">★★★★★</div>
+        <p>"Por fin alguien que me escuchó. La cirugía laparoscópica fue rápida y casi no tuve dolor. 100% recomendado."</p>
+        <div class="who"><span class="av">LP</span><div><b>Laura P.</b><span>Reflujo gastroesofágico</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="kicker reveal" style="color:var(--brand);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem">Contacto</span>
+        <h2 class="reveal d1">Agenda tu valoración hoy</h2>
+        <p class="lead reveal d2">Estoy para ayudarte. Escríbeme por WhatsApp, llámame o déjame tus datos y yo te contacto. Resolvemos tu caso con la atención que mereces.</p>
+
+        <a class="cinfo reveal" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.04c-.24.68-1.42 1.32-1.95 1.36-.5.04-.95.22-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.44-1.08-2.75s.68-1.95.93-2.22c.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.13.12.29.02.47-.46.91-.94.87-.69 1.3.94 1.61 1.9 2.13 3.32 2.84.24.12.38.1.52-.06.18-.18.67-.78.85-1.05Z"/></svg></span>
+          <div class="x"><b>WhatsApp</b><span>+52 477 541 5614 · respondemos en minutos</span></div>
+        </a>
+
+        <a class="cinfo reveal d1" href="tel:+524775415614">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5c0-1.1.9-2 2-2h2.5c.5 0 .9.34 1 .82l.9 4a1 1 0 0 1-.29.95l-1.7 1.7a14 14 0 0 0 6.1 6.1l1.7-1.7a1 1 0 0 1 .95-.29l4 .9c.48.11.82.5.82 1V19a2 2 0 0 1-2 2h-1C9.7 21 3 14.3 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+          <div class="x"><b>Teléfono</b><span>+52 477 541 5614</span></div>
+        </a>
+
+        <div class="cinfo reveal d2">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.9"/></svg></span>
+          <div class="x"><b>Consultorios <span class="pill">Próximamente</span></b><span>2 ubicaciones en León, Gto. — direcciones por confirmar</span></div>
+        </div>
+
+        <div class="cinfo reveal d3">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.9"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg></span>
+          <div class="x"><b>Correo <span class="pill">Próximamente</span></b><span>Correo de contacto por confirmar</span></div>
+        </div>
+      </div>
+
+      <!-- Formulario que arma un mensaje de WhatsApp -->
+      <form class="form reveal d2" id="leadForm">
+        <h3>Solicita tu cita</h3>
+        <p>Déjame tus datos y te contacto por WhatsApp lo antes posible.</p>
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="field">
+          <label for="tel">Teléfono / WhatsApp</label>
+          <input id="tel" name="tel" type="tel" placeholder="10 dígitos" required />
+        </div>
+        <div class="field">
+          <label for="motivo">¿Qué necesitas?</label>
+          <select id="motivo" name="motivo">
+            <option>Valoración general</option>
+            <option>Cirugía de vesícula</option>
+            <option>Hernia</option>
+            <option>Reflujo / hernia hiatal</option>
+            <option>Apéndice / urgencia</option>
+            <option>Otra / segunda opinión</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="msg">Mensaje (opcional)</label>
+          <textarea id="msg" name="msg" placeholder="Cuéntame brevemente tu caso..."></textarea>
+        </div>
+        <button class="btn btn-wa" type="submit">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+          Enviar por WhatsApp
+        </button>
+        <p class="micro">Al enviar se abrirá WhatsApp con tu mensaje listo para el Dr. Jorge.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BANNER CTA ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-banner reveal">
+      <h2>¿Tienes dudas sobre tu padecimiento?</h2>
+      <p>No esperes a que avance. Una valoración a tiempo puede hacer toda la diferencia. Escríbeme hoy mismo.</p>
+      <a class="btn btn-wa btn-lg" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20tengo%20dudas%20sobre%20mi%20padecimiento%20y%20me%20gustar%C3%ADa%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+        Hablar con el Dr. Jorge
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#inicio" class="brand">
+          <span class="logo"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+          Dr.&nbsp;<b style="color:var(--mint)">Jorge</b>
+        </a>
+        <p>Cirujano Gastrointestinal y Laparoscópico. Cirugía mínimamente invasiva con atención humana en León, Guanajuato.</p>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#especialidad">Especialidad</a></li>
+          <li><a href="#procedimientos">Procedimientos</a></li>
+          <li><a href="#por-que">Por qué elegirme</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="tel:+524775415614"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5c0-1.1.9-2 2-2h2.5c.5 0 .9.34 1 .82l.9 4a1 1 0 0 1-.29.95l-1.7 1.7a14 14 0 0 0 6.1 6.1l1.7-1.7a1 1 0 0 1 .95-.29l4 .9c.48.11.82.5.82 1V19a2 2 0 0 1-2 2h-1C9.7 21 3 14.3 3 6V5Z" stroke="currentColor" stroke-width="2"/></svg> +52 477 541 5614</a></li>
+          <li><a href="https://wa.me/524775415614" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg> WhatsApp</a></li>
+          <li><span style="opacity:.7">León, Guanajuato, México</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Dr. Jorge — Todos los derechos reservados.</span>
+      <span>* Datos ilustrativos pendientes de confirmar. Este sitio es informativo y no sustituye una consulta médica.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= WhatsApp flotante ================= -->
+<a class="wa-float" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.04c-.24.68-1.42 1.32-1.95 1.36-.5.04-.95.22-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.44-1.08-2.75s.68-1.95.93-2.22c.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.13.12.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.43 1.78.98.88 1.81 1.15 2.07 1.28.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.24.09 1.56.74 1.83.87.27.13.45.2.51.31.07.11.07.62-.17 1.31Z"/></svg>
+</a>
+
+<script>
+/* Nav scroll */
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30));
+
+/* Menú móvil */
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  menu.classList.toggle('open');
+});
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  burger.classList.remove('open'); menu.classList.remove('open');
+}));
+
+/* Reveal al hacer scroll */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* Contador de estadísticas */
+const counters = document.querySelectorAll('[data-count]');
+const cio = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target, end = +el.dataset.count, suf = el.dataset.suffix || '';
+    let cur = 0; const step = Math.max(1, Math.floor(end / 60));
+    const t = setInterval(() => {
+      cur += step;
+      if (cur >= end) { cur = end; clearInterval(t); }
+      el.textContent = cur + suf;
+    }, 22);
+    cio.unobserve(el);
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => cio.observe(c));
+
+/* Año footer */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Formulario -> WhatsApp */
+document.getElementById('leadForm').addEventListener('submit', (ev) => {
+  ev.preventDefault();
+  const f = ev.target;
+  const txt = `Hola Dr. Jorge, soy *${f.nombre.value}*.%0A`
+    + `Tel: ${f.tel.value}%0A`
+    + `Motivo: ${f.motivo.value}%0A`
+    + (f.msg.value ? `Mensaje: ${f.msg.value}%0A` : '')
+    + `Me gustaría agendar una valoración.`;
+  window.open(`https://wa.me/524775415614?text=${txt}`, '_blank');
+});
+</script>
+</body>
+</html>
