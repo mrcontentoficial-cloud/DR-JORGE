@@ -278,7 +278,6 @@ section{position:relative}
 
 /* ===== Stats ===== */
 .stats{background:linear-gradient(135deg,var(--brand-dark),var(--brand-darker));color:#fff;border-radius:var(--radius);padding:3rem 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;position:relative;overflow:hidden}
-.stats::after{content:'';position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(124,224,190,.25),transparent 70%);top:-120px;right:-80px}
 .stat b{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,3rem);font-weight:800;display:block;line-height:1}
 .stat span{font-size:.92rem;opacity:.82}
 
@@ -308,7 +307,10 @@ section{position:relative}
 /* ===== CONTACTO ===== */
 .contact{padding:90px 0;background:
   radial-gradient(800px 500px at 100% 0%,var(--mint-soft),transparent 60%),var(--bg)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(2rem,5vw,4rem);row-gap:0;align-items:start;grid-template-areas:"head form" "cinfos form"}
+.contact-head{grid-area:head}
+.cinfos{grid-area:cinfos}
+.contact-grid .form{grid-area:form}
 .contact h2{font-size:clamp(2rem,4.2vw,2.8rem);font-weight:800;margin-bottom:1rem}
 .contact .lead{color:var(--muted);font-size:1.08rem;margin-bottom:2rem}
 .cinfo{display:flex;gap:1rem;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-sm);padding:1.2rem 1.3rem;margin-bottom:1rem;transition:.25s}
@@ -399,7 +401,11 @@ section{position:relative}
   .nav .nav-cta .btn{display:none}
 }
 @media(max-width:920px){
-  .why-grid,.contact-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .contact-grid{display:flex;flex-direction:column;grid-template-areas:none}
+  .contact-head{order:1}
+  .contact-grid .form{order:2}
+  .cinfos{order:3}
   .hero-grid{display:flex;flex-direction:column;grid-template-areas:none}
   .hero-head{order:1}
   .hero-media{order:2;width:100%;max-width:420px;margin:1.2rem auto 0}
@@ -677,11 +683,12 @@ section{position:relative}
 <section class="contact" id="contacto">
   <div class="wrap">
     <div class="contact-grid">
-      <div>
+      <div class="contact-head">
         <span class="kicker reveal" style="color:var(--brand);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem">Contacto</span>
         <h2 class="reveal d1">Agenda tu valoración hoy</h2>
         <p class="lead reveal d2">Estoy para ayudarte. Escríbeme por WhatsApp, llámame o déjame tus datos y yo te contacto. Resolvemos tu caso con la atención que mereces.</p>
-
+      </div>
+      <div class="cinfos">
         <a class="cinfo reveal" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.04c-.24.68-1.42 1.32-1.95 1.36-.5.04-.95.22-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.44-1.08-2.75s.68-1.95.93-2.22c.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.13.12.29.02.47-.46.91-.94.87-.69 1.3.94 1.61 1.9 2.13 3.32 2.84.24.12.38.1.52-.06.18-.18.67-.78.85-1.05Z"/></svg></span>
           <div class="x"><b>WhatsApp · Citas</b><span>+52 477 541 5614 · respondemos en minutos</span></div>
@@ -692,14 +699,14 @@ section{position:relative}
           <div class="x"><b>Urgencias · 24 h</b><span>+52 462 123 6465</span></div>
         </a>
 
-        <a class="cinfo reveal d2" href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20del%20Parque%20Calle%20Aurelio%20Luis%20Gallardo%20403%20Le%C3%B3n%20Gto" target="_blank" rel="noopener">
+        <a class="cinfo reveal d2" href="https://www.google.com/maps/dir/?api=1&destination=Cl%C3%ADnica%20del%20Parque%2C%20Calle%20Aurelio%20Luis%20Gallardo%20403%2C%20Le%C3%B3n%2C%20Gto" target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.9"/></svg></span>
-          <div class="x"><b>Consultorio · León, Gto.</b><span>Clínica del Parque · Calle Aurelio Luis Gallardo #403, León, Gto. <span class="pill">ver en mapa</span></span></div>
+          <div class="x"><b>Consultorio · León, Gto.</b><span>Clínica del Parque · Calle Aurelio Luis Gallardo #403, León, Gto. <span class="pill">cómo llegar</span></span></div>
         </a>
 
-        <a class="cinfo reveal d2" href="https://www.google.com/maps/search/?api=1&query=M%C3%A9dica%20Insurgentes%20Av.%20de%20los%20Insurgentes%20237%20Irapuato%20Guanajuato" target="_blank" rel="noopener">
+        <a class="cinfo reveal d2" href="https://www.google.com/maps/dir/?api=1&destination=M%C3%A9dica%20Insurgentes%2C%20Av.%20de%20los%20Insurgentes%20237%2C%20Irapuato%2C%20Guanajuato" target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.9"/></svg></span>
-          <div class="x"><b>Consultorio · Irapuato, Gto.</b><span>Médica Insurgentes · Av. de los Insurgentes #237, Irapuato, Gto. <span class="pill">ver en mapa</span></span></div>
+          <div class="x"><b>Consultorio · Irapuato, Gto.</b><span>Médica Insurgentes · Av. de los Insurgentes #237, Irapuato, Gto. <span class="pill">cómo llegar</span></span></div>
         </a>
 
         <a class="cinfo reveal d3" href="https://www.instagram.com/dr.jorgereyes.cirujano/" target="_blank" rel="noopener">
