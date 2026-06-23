@@ -343,6 +343,12 @@ section{position:relative}
 /* ===== Animaciones ===== */
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(22,184,138,.5)}50%{box-shadow:0 0 0 8px rgba(22,184,138,0)}}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes badgeBob{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-9px) rotate(.6deg)}}
+@keyframes badgePop{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.float-badge{animation:badgeBob 4.5s ease-in-out infinite}
+.fb-2{animation:badgeBob 4.5s ease-in-out infinite 1s}
+.float-badge .ic{animation:badgePop 2.8s ease-in-out infinite}
+.fb-2 .ic{animation-delay:1.4s}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
@@ -503,32 +509,32 @@ section{position:relative}
     </div>
     <div class="cards">
       <div class="card reveal">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4 0 7 3 7 7 0 5-7 11-7 11S5 15 5 10c0-4 3-7 7-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M13.2 3.4c-.6 1.2-.3 2 .3 2.8C15.2 8 17 9.6 17 12.5a5 5 0 1 1-10 0c0-2.9 1.9-4.6 3.6-6.3.6-.8.9-1.6.3-2.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 3.4h2.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="10.4" cy="13" r="1.4" stroke="currentColor" stroke-width="1.5"/></svg></span>
         <h3>Vesícula biliar</h3>
         <p>Cirugía laparoscópica de cálculos y colecistitis (extirpación de vesícula) con recuperación rápida.</p>
       </div>
       <div class="card reveal d1">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M8 8c0 2 8 2 8 0M8 16c0 2 8 2 8 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 4.5c-1.2 2.5-1.2 5 0 7.5M17 4.5c1.2 2.5 1.2 5 0 7.5M7 12c2 0 2-3.2 5-3.2s3 3.2 5 3.2M8.5 18c1.6 1.3 5.4 1.3 7 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <h3>Hernias</h3>
         <p>Reparación de hernias inguinales, umbilicales y de pared abdominal con malla y técnica mínimamente invasiva.</p>
       </div>
       <div class="card reveal d2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4c-3 0-5 2-5 5 0 4 5 11 5 11s5-7 5-11c0-3-2-5-5-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3s4.5 3.8 4.5 8.5a4.5 4.5 0 0 1-9 0c0-1.8.9-3 1.9-3.9.1 1 .6 1.8 1.4 2.2C12 8 12.6 5.5 12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <h3>Reflujo y hernia hiatal</h3>
         <p>Tratamiento quirúrgico del reflujo gastroesofágico cuando los medicamentos ya no son suficientes.</p>
       </div>
       <div class="card reveal">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M8 4v5a4 4 0 0 0 4 4h2a3 3 0 0 1 3 3v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 13c.3 1.7-.2 3.2-1.6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
         <h3>Apéndice</h3>
         <p>Apendicectomía laparoscópica de urgencia, con atención oportuna para evitar complicaciones.</p>
       </div>
       <div class="card reveal d1">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 9h6M9 13h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M10 3.5c0 2.2-1.4 3-2.4 4.6C6 11 7.2 15.5 11.5 15.5c3.3 0 5.5-2.2 5.5-5.5 0-2.8-1.9-4.6-4.4-4.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13.4c1.2.8 1.5 2.2 1 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
         <h3>Cirugía gastrointestinal</h3>
         <p>Padecimientos de estómago, intestino y colon que requieren manejo quirúrgico especializado.</p>
       </div>
       <div class="card reveal d2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="5.5" y="5" width="13" height="15" rx="2" stroke="currentColor" stroke-width="1.7"/><rect x="9" y="3.5" width="6" height="3" rx="1" stroke="currentColor" stroke-width="1.7"/><path d="M9 13l2 2 4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <h3>Valoración quirúrgica</h3>
         <p>¿No sabes si necesitas cirugía? Agenda una consulta y recibe una segunda opinión confiable.</p>
       </div>
