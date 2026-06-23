@@ -167,7 +167,10 @@ section{position:relative}
     radial-gradient(900px 700px at -10% 110%, var(--bg-2) 0%, transparent 55%),
     var(--bg);
 }
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;column-gap:clamp(2rem,5vw,5rem);row-gap:0;align-items:center;grid-template-areas:"head media" "body media"}
+.hero-head{grid-area:head}
+.hero-body{grid-area:body}
+.hero-media{grid-area:media}
 .eyebrow{
   display:inline-flex;align-items:center;gap:.5rem;
   background:var(--white);border:1px solid var(--line);
@@ -383,8 +386,11 @@ section{position:relative}
   .nav .nav-cta .btn{display:none}
 }
 @media(max-width:920px){
-  .hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
-  .hero-media{width:100%;max-width:420px;margin:0 auto;order:-1}
+  .why-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-grid{display:flex;flex-direction:column;grid-template-areas:none}
+  .hero-head{order:1}
+  .hero-media{order:2;width:100%;max-width:420px;margin:1.2rem auto 0}
+  .hero-body{order:3;margin-top:1.4rem}
   .cards,.steps,.tcards{grid-template-columns:1fr 1fr}
   .trust-grid,.stats{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
@@ -457,10 +463,12 @@ section{position:relative}
 <!-- ================= HERO ================= -->
 <section class="hero" id="inicio">
   <div class="wrap hero-grid">
-    <div class="hero-text">
+    <div class="hero-head">
       <span class="eyebrow reveal"><span class="dot"></span> Cirugía gastrointestinal de mínima invasión · León, Gto.</span>
       <h1 class="reveal d1">Dr. <span class="grad">Jorge</span></h1>
       <div class="role reveal d1">Cirugía Gastrointestinal y Laparoscópica</div>
+    </div>
+    <div class="hero-body">
       <p class="lead reveal d2">Atención quirúrgica de alta especialidad con técnicas mínimamente invasivas: menos dolor, recuperación más rápida y un trato humano de principio a fin.</p>
       <div class="hero-cta reveal d3">
         <a class="btn btn-wa btn-lg" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
