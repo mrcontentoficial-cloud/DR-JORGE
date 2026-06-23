@@ -41,15 +41,28 @@
   "description": "Cirujano Gastrointestinal y de Mínima Invasión. Certificado por el Colegio Mexicano de Cirugía General.",
   "medicalSpecialty": "Surgical",
   "telephone": "+52-477-541-5614",
-  "address": {
-    "@type": "PostalAddress",
-    "name": "Clínica del Parque",
-    "streetAddress": "Calle Aurelio Luis Gallardo #403",
-    "addressLocality": "León",
-    "addressRegion": "Guanajuato",
-    "addressCountry": "MX"
-  },
-  "areaServed": { "@type": "City", "name": "León, Guanajuato, México" },
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "name": "Clínica del Parque",
+      "streetAddress": "Calle Aurelio Luis Gallardo #403",
+      "addressLocality": "León",
+      "addressRegion": "Guanajuato",
+      "addressCountry": "MX"
+    },
+    {
+      "@type": "PostalAddress",
+      "name": "Médica Insurgentes",
+      "streetAddress": "Av. de los Insurgentes #237",
+      "addressLocality": "Irapuato",
+      "addressRegion": "Guanajuato",
+      "addressCountry": "MX"
+    }
+  ],
+  "areaServed": [
+    { "@type": "City", "name": "León, Guanajuato, México" },
+    { "@type": "City", "name": "Irapuato, Guanajuato, México" }
+  ],
   "contactPoint": [
     { "@type": "ContactPoint", "contactType": "Citas (WhatsApp)", "telephone": "+52-477-541-5614" },
     { "@type": "ContactPoint", "contactType": "Urgencias", "telephone": "+52-462-123-6465" }
@@ -536,7 +549,7 @@ section{position:relative}
 <!-- ================= TRUST BAR ================= -->
 <section class="trust">
   <div class="wrap"><div class="trust-grid">
-    <div class="t reveal"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.95 5.5L12 16.5 7.05 18.2 8 12.7l-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><b>Alta especialidad</b><span>Cirugía gastrointestinal</span></div>
+    <div class="t reveal"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.95 5.5L12 16.5 7.05 18.2 8 12.7l-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><b>Gran Especialidad</b><span>Cirugía gastrointestinal</span></div>
     <div class="t reveal d1"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Mínimamente invasiva</b><span>Técnica laparoscópica</span></div>
     <div class="t reveal d2"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><b>Trato humano</b><span>Acompañamiento cercano</span></div>
     <div class="t reveal d3"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><b>Respuesta ágil</b><span>Agenda en minutos</span></div>
@@ -652,10 +665,82 @@ section{position:relative}
     <div style="margin-top:56px" class="reveal">
       <div class="stats">
         <div class="stat"><b data-count="1000" data-suffix="+">0</b><span>Cirugías realizadas*</span></div>
-        <div class="stat"><b data-count="15" data-suffix="+">0</b><span>Años de experiencia*</span></div>
+        <div class="stat"><b data-count="10" data-suffix="+">0</b><span>Años de experiencia*</span></div>
         <div class="stat"><b data-count="98" data-suffix="%">0</b><span>Pacientes satisfechos*</span></div>
         <div class="stat"><b data-count="24" data-suffix="h">0</b><span>Respuesta a urgencias</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="kicker reveal" style="color:var(--brand);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem">Contacto</span>
+        <h2 class="reveal d1">Agenda tu valoración hoy</h2>
+        <p class="lead reveal d2">Estoy para ayudarte. Escríbeme por WhatsApp, llámame o déjame tus datos y yo te contacto. Resolvemos tu caso con la atención que mereces.</p>
+
+        <a class="cinfo reveal" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.04c-.24.68-1.42 1.32-1.95 1.36-.5.04-.95.22-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.44-1.08-2.75s.68-1.95.93-2.22c.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.13.12.29.02.47-.46.91-.94.87-.69 1.3.94 1.61 1.9 2.13 3.32 2.84.24.12.38.1.52-.06.18-.18.67-.78.85-1.05Z"/></svg></span>
+          <div class="x"><b>WhatsApp · Citas</b><span>+52 477 541 5614 · respondemos en minutos</span></div>
+        </a>
+
+        <a class="cinfo reveal d1" href="tel:+524621236465">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5c0-1.1.9-2 2-2h2.5c.5 0 .9.34 1 .82l.9 4a1 1 0 0 1-.29.95l-1.7 1.7a14 14 0 0 0 6.1 6.1l1.7-1.7a1 1 0 0 1 .95-.29l4 .9c.48.11.82.5.82 1V19a2 2 0 0 1-2 2h-1C9.7 21 3 14.3 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+          <div class="x"><b>Urgencias · 24 h</b><span>+52 462 123 6465</span></div>
+        </a>
+
+        <a class="cinfo reveal d2" href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20del%20Parque%20Calle%20Aurelio%20Luis%20Gallardo%20403%20Le%C3%B3n%20Gto" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.9"/></svg></span>
+          <div class="x"><b>Consultorio · León, Gto.</b><span>Clínica del Parque · Calle Aurelio Luis Gallardo #403, León, Gto. <span class="pill">ver en mapa</span></span></div>
+        </a>
+
+        <a class="cinfo reveal d2" href="https://www.google.com/maps/search/?api=1&query=M%C3%A9dica%20Insurgentes%20Av.%20de%20los%20Insurgentes%20237%20Irapuato%20Guanajuato" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.9"/></svg></span>
+          <div class="x"><b>Consultorio · Irapuato, Gto.</b><span>Médica Insurgentes · Av. de los Insurgentes #237, Irapuato, Gto. <span class="pill">ver en mapa</span></span></div>
+        </a>
+
+        <a class="cinfo reveal d3" href="https://www.instagram.com/dr.jorgereyes.cirujano/" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.9"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
+          <div class="x"><b>Instagram</b><span>@dr.jorgereyes.cirujano</span></div>
+        </a>
+      </div>
+
+      <!-- Formulario que arma un mensaje de WhatsApp -->
+      <form class="form reveal d2" id="leadForm">
+        <h3>Solicita tu cita</h3>
+        <p>Déjame tus datos y te contacto por WhatsApp lo antes posible.</p>
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="field">
+          <label for="tel">Teléfono / WhatsApp</label>
+          <input id="tel" name="tel" type="tel" placeholder="10 dígitos" required />
+        </div>
+        <div class="field">
+          <label for="motivo">¿Qué necesitas?</label>
+          <select id="motivo" name="motivo">
+            <option>Valoración general</option>
+            <option>Cirugía de vesícula</option>
+            <option>Hernia</option>
+            <option>Reflujo / hernia hiatal</option>
+            <option>Apéndice / urgencia</option>
+            <option>Otra / segunda opinión</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="msg">Mensaje (opcional)</label>
+          <textarea id="msg" name="msg" placeholder="Cuéntame brevemente tu caso..."></textarea>
+        </div>
+        <button class="btn btn-wa" type="submit">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+          Enviar por WhatsApp
+        </button>
+        <p class="micro">Al enviar se abrirá WhatsApp con tu mensaje listo para el Dr. Jorge.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -767,73 +852,6 @@ section{position:relative}
   </div>
 </section>
 
-<!-- ================= CONTACTO ================= -->
-<section class="contact" id="contacto">
-  <div class="wrap">
-    <div class="contact-grid">
-      <div>
-        <span class="kicker reveal" style="color:var(--brand);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem">Contacto</span>
-        <h2 class="reveal d1">Agenda tu valoración hoy</h2>
-        <p class="lead reveal d2">Estoy para ayudarte. Escríbeme por WhatsApp, llámame o déjame tus datos y yo te contacto. Resolvemos tu caso con la atención que mereces.</p>
-
-        <a class="cinfo reveal" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.04c-.24.68-1.42 1.32-1.95 1.36-.5.04-.95.22-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.44-1.08-2.75s.68-1.95.93-2.22c.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.13.12.29.02.47-.46.91-.94.87-.69 1.3.94 1.61 1.9 2.13 3.32 2.84.24.12.38.1.52-.06.18-.18.67-.78.85-1.05Z"/></svg></span>
-          <div class="x"><b>WhatsApp · Citas</b><span>+52 477 541 5614 · respondemos en minutos</span></div>
-        </a>
-
-        <a class="cinfo reveal d1" href="tel:+524621236465">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5c0-1.1.9-2 2-2h2.5c.5 0 .9.34 1 .82l.9 4a1 1 0 0 1-.29.95l-1.7 1.7a14 14 0 0 0 6.1 6.1l1.7-1.7a1 1 0 0 1 .95-.29l4 .9c.48.11.82.5.82 1V19a2 2 0 0 1-2 2h-1C9.7 21 3 14.3 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
-          <div class="x"><b>Urgencias · 24 h</b><span>+52 462 123 6465</span></div>
-        </a>
-
-        <a class="cinfo reveal d2" href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20del%20Parque%20Calle%20Aurelio%20Luis%20Gallardo%20403%20Le%C3%B3n%20Gto" target="_blank" rel="noopener">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.9"/></svg></span>
-          <div class="x"><b>Consultorio · León, Gto.</b><span>Clínica del Parque · Calle Aurelio Luis Gallardo #403, León, Gto. <span class="pill">ver en mapa</span></span></div>
-        </a>
-
-        <a class="cinfo reveal d3" href="https://www.instagram.com/dr.jorgereyes.cirujano/" target="_blank" rel="noopener">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.9"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
-          <div class="x"><b>Instagram</b><span>@dr.jorgereyes.cirujano</span></div>
-        </a>
-      </div>
-
-      <!-- Formulario que arma un mensaje de WhatsApp -->
-      <form class="form reveal d2" id="leadForm">
-        <h3>Solicita tu cita</h3>
-        <p>Déjame tus datos y te contacto por WhatsApp lo antes posible.</p>
-        <div class="field">
-          <label for="nombre">Nombre completo</label>
-          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
-        </div>
-        <div class="field">
-          <label for="tel">Teléfono / WhatsApp</label>
-          <input id="tel" name="tel" type="tel" placeholder="10 dígitos" required />
-        </div>
-        <div class="field">
-          <label for="motivo">¿Qué necesitas?</label>
-          <select id="motivo" name="motivo">
-            <option>Valoración general</option>
-            <option>Cirugía de vesícula</option>
-            <option>Hernia</option>
-            <option>Reflujo / hernia hiatal</option>
-            <option>Apéndice / urgencia</option>
-            <option>Otra / segunda opinión</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="msg">Mensaje (opcional)</label>
-          <textarea id="msg" name="msg" placeholder="Cuéntame brevemente tu caso..."></textarea>
-        </div>
-        <button class="btn btn-wa" type="submit">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
-          Enviar por WhatsApp
-        </button>
-        <p class="micro">Al enviar se abrirá WhatsApp con tu mensaje listo para el Dr. Jorge.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
 <!-- ================= BANNER CTA ================= -->
 <section class="section">
   <div class="wrap">
@@ -874,7 +892,8 @@ section{position:relative}
           <li><a href="https://wa.me/524775415614" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg> Citas: 477 541 5614</a></li>
           <li><a href="tel:+524621236465"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5c0-1.1.9-2 2-2h2.5c.5 0 .9.34 1 .82l.9 4a1 1 0 0 1-.29.95l-1.7 1.7a14 14 0 0 0 6.1 6.1l1.7-1.7a1 1 0 0 1 .95-.29l4 .9c.48.11.82.5.82 1V19a2 2 0 0 1-2 2h-1C9.7 21 3 14.3 3 6V5Z" stroke="currentColor" stroke-width="2"/></svg> Urgencias: 462 123 6465</a></li>
           <li><a href="https://www.instagram.com/dr.jorgereyes.cirujano/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg> @dr.jorgereyes.cirujano</a></li>
-          <li><span style="opacity:.7">Clínica del Parque · Calle Aurelio Luis Gallardo #403, León, Gto.</span></li>
+          <li><span style="opacity:.7">León · Clínica del Parque · Calle Aurelio Luis Gallardo #403</span></li>
+          <li><span style="opacity:.7">Irapuato · Médica Insurgentes · Av. de los Insurgentes #237</span></li>
         </ul>
       </div>
     </div>
