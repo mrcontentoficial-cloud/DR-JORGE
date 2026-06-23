@@ -398,7 +398,30 @@ section{position:relative}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  .steps,.footer-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  /* Por qué elegirme: 4 features en collage 2x2 */
+  #por-que .why-grid > div:not(.why-media){display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+  #por-que .feature{flex-direction:column;text-align:center;align-items:center;margin:0;gap:.5rem;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.2rem .8rem}
+  #por-que .feature .ic{margin:0 auto}
+  #por-que .feature h4{font-size:.9rem;margin-bottom:.15rem}
+  #por-que .feature p{font-size:.78rem}
+  /* Cómo agendar: 3 pasos en fila */
+  .steps{grid-template-columns:repeat(3,1fr);gap:.6rem}
+  .steps .step{padding:1.2rem .65rem;text-align:center;border-radius:16px}
+  .steps .step .num{margin:0 auto .65rem;width:38px;height:38px;font-size:1rem}
+  .steps .step h4{font-size:.84rem;line-height:1.18}
+  .steps .step p{display:none}
+  /* Pacientes: cascada en 3 columnas (más testimonios visibles) */
+  .tcols{gap:.55rem;max-height:560px}
+  .tcol{max-width:none}
+  .tcol.c2,.tcol.c3{display:block}
+  .tcard{padding:.9rem;border-radius:14px;gap:.55rem}
+  .tcard .stars{font-size:.8rem;letter-spacing:1px}
+  .tcard p{font-size:.7rem;line-height:1.45}
+  .tcard .who{gap:.5rem}
+  .tcard .av{width:30px;height:30px;font-size:.7rem}
+  .tcard .who b{font-size:.72rem;line-height:1.2}
+  .tcard .who span{font-size:.64rem}
   /* Procedimientos: collage compacto 3x2 (no lista larga) */
   .cards{grid-template-columns:repeat(3,1fr);gap:.7rem}
   .cards .card{padding:1.1rem .6rem;text-align:center;border-radius:16px}
