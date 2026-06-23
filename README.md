@@ -12,10 +12,15 @@ Sitio de un solo archivo: [`index.html`](index.html) (HTML + CSS + JS embebidos,
 - **Sedes:** León (Clínica del Parque) e Irapuato (Médica Insurgentes)
 - **Paleta:** verde sage/olivo `#6F8F4E`, bosque `#3C5132`, crema `#F3EEE1` (tomada de las gráficas de marca de IG)
 
+## Fotos reales (ya integradas en `assets/`)
+- `assets/dr-jorge-hero.jpg` — hero (Dr. Jorge en quirófano), optimizada a ~1000px.
+- `assets/cirugia-precision.jpg` — sección Especialidad.
+- `assets/equipo-quirofano.jpg` — sección Por qué elegirme.
+Las ilustraciones SVG placeholder fueron reemplazadas por estas fotos.
+
 ## Pendientes por confirmar (marcados con `*` o "por confirmar")
 - **Direcciones exactas** de las 2 sedes (calle y número).
 - **Correo de contacto.**
-- **Foto del Dr. Jorge** y **gráficas de marca**: el sitio tiene placeholders. Coloca los archivos en `assets/` (p. ej. `assets/dr-jorge.jpg`) — no fue posible descargarlos automáticamente de Instagram.
 - **Estadísticas:** cifras ilustrativas marcadas con `*`.
 - **Testimonios:** de ejemplo, reemplazar por reseñas reales.
 
