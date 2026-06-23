@@ -1,0 +1,104 @@
+==========================================================
+  LINEA GRAFICA - DR. JORGE REYES SANCHEZ
+  Cirugia Gastrointestinal y Laparoscopica - Leon / Irapuato, Bajio
+  Sitio web: https://mrcontentoficial-cloud.github.io/DR-JORGE/
+  Por: Mister Content (Agencia Creativa)
+==========================================================
+
+
+----------------------------------------------------------
+1) PALETA DE COLORES - VERDES (principal)
+----------------------------------------------------------
+Verde sage / olivo (PRINCIPAL)......  #6F8F4E   rgb(111, 143, 78)
+   Uso: color de marca, acentos, enlaces, iconos, kicker.
+
+Verde bosque (oscuro)...............  #3C5132   rgb(60, 81, 50)
+   Uso: titulos sobre claro, degradados, footer-darker base,
+        texto de marca en logo.
+
+Verde bosque profundo (darker)......  #283821   rgb(40, 56, 33)
+   Uso: fondo del footer, base de degradados oscuros (stats).
+
+Verde claro (light).................  #88A861   rgb(136, 168, 97)
+   Uso: degradados con el principal, punto del pill, brillos.
+
+Sage claro / menta (acento).........  #BFD79A   rgb(191, 215, 154)
+   Uso: blobs decorativos, acentos suaves, hover de iconos.
+
+Menta muy suave (mint-soft).........  #E6EFD4   rgb(230, 239, 212)
+   Uso: fondos de iconos, hover de tarjetas, halos suaves.
+
+
+----------------------------------------------------------
+2) NEUTROS Y FONDOS
+----------------------------------------------------------
+Tinta / texto fuerte (ink)..........  #232E1C   rgb(35, 46, 28)
+Texto cuerpo (body).................  #4A5340   rgb(74, 83, 64)
+Texto tenue (muted).................  #6E755F   rgb(110, 117, 95)
+Linea / bordes (line)...............  #E4DCC8   rgb(228, 220, 200)
+Fondo crema (bg) - PRINCIPAL........  #F3EEE1   rgb(243, 238, 225)
+Fondo crema 2 (bg-2)................  #EAE2D0   rgb(234, 226, 208)
+Blanco (white)......................  #FFFFFF   rgb(255, 255, 255)
+
+Acento WhatsApp.....................  #25D366   rgb(37, 211, 102)
+Estrellas / rating..................  #F5B301   rgb(245, 179, 1)
+
+
+----------------------------------------------------------
+3) DEGRADADOS (gradients) USADOS
+----------------------------------------------------------
+Boton primario / acentos:
+   linear-gradient(135deg, #88A861, #6F8F4E)
+Bloques oscuros (stats, banner CTA, fotos placeholder):
+   linear-gradient(135deg, #3C5132, #283821)
+Iconos sobre claro:
+   linear-gradient(135deg, #E6EFD4, #FFFFFF)
+Barra de acento de tarjetas (hover):
+   linear-gradient(90deg, #88A861, #6F8F4E)
+
+
+----------------------------------------------------------
+4) TIPOGRAFIAS
+----------------------------------------------------------
+Display / titulos...:  Plus Jakarta Sans
+   Pesos: 400, 500, 600, 700, 800
+   Uso: h1-h4, marca, numeros, botones, etiquetas.
+   Detalle: titulos con letter-spacing -0.02em (tracking apretado).
+
+Cuerpo / texto......:  Inter
+   Pesos: 400, 500, 600
+   Uso: parrafos, descripciones, formularios.
+   Interlineado base: 1.65
+
+Fuente de respaldo (fallback): system-ui, sans-serif
+
+
+----------------------------------------------------------
+5) FORMAS Y ESTILO
+----------------------------------------------------------
+Radio de esquinas grande (radius).....  22px   (tarjetas, paneles)
+Radio chico (radius-sm)...............  14px   (campos, info)
+Pildoras / botones....................  999px  (totalmente redondeado)
+Ancho maximo de contenido.............  1180px
+
+Sombras:
+   sm:  0 2px 10px rgba(7,59,45,.06)
+   md:  0 18px 50px -18px rgba(7,59,45,.28)
+   lg:  0 40px 90px -30px rgba(7,59,45,.38)
+   (todas con tinte verde, no negro neutro)
+
+
+----------------------------------------------------------
+6) PRINCIPIOS DE LA MARCA
+----------------------------------------------------------
+- Tono: profesional, humano y cercano. Autoridad medica sin frialdad.
+- Base crema (#F3EEE1) + verdes: transmite salud, calma y confianza.
+- Tarjetas blancas sobre crema para que la informacion resalte.
+- Fotografia real de quirofano (no stock) como prueba de credibilidad.
+- Acento verde solo en lo importante (CTA, iconos, datos clave).
+- Llamado a la accion principal: WhatsApp (verde #25D366).
+- Nada de adornos genericos; geometria limpia y mucho aire.
+
+==========================================================
+  Mr Content - Imaginamos. Creamos. Transformamos.
+==========================================================
