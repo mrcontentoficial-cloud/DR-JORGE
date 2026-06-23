@@ -390,8 +390,24 @@ section{position:relative}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  .cards,.steps,.tcards,.trust-grid,.stats,.footer-grid{grid-template-columns:1fr}
-  .hero{padding-top:130px}
+  .cards,.steps,.footer-grid{grid-template-columns:1fr}
+  /* Rectángulo de confianza y galería en 2 columnas (más compacto y variado) */
+  .trust-grid,.stats{grid-template-columns:1fr 1fr}
+  .trust-grid{margin-top:-40px}
+  .trust-grid .t{padding:1.4rem 1.1rem}
+  .trust-grid .t .tic{width:44px;height:44px;border-radius:12px;margin-bottom:.7rem}
+  .trust-grid .t b{font-size:1rem}
+  .trust-grid .t span{font-size:.8rem}
+  .gallery{grid-template-columns:1fr 1fr}
+  .gitem .cap{font-size:.8rem;padding:1.1rem .8rem .7rem}
+  /* Secciones más compactas en móvil */
+  .section,.contact{padding:56px 0}
+  .trust{padding-bottom:44px}
+  .head{margin-bottom:36px}
+  .hero{padding-top:120px;padding-bottom:70px}
+  .hero h1{font-size:2.7rem}
+  .hero-cta{flex-direction:column}
+  .hero-cta .btn{width:100%}
   .float-badge{display:none}
   .footer-bottom{flex-direction:column;text-align:center}
 }
