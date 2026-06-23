@@ -272,11 +272,7 @@ section{position:relative}
   -webkit-mask-image:linear-gradient(to bottom,transparent,#000 16%,#000 84%,transparent);
   mask-image:linear-gradient(to bottom,transparent,#000 16%,#000 84%,transparent)}
 .tcol{flex:1 1 0;max-width:360px}
-.tcol-track{display:flex;flex-direction:column;gap:1.4rem;padding-bottom:1.4rem;animation:scrollUp linear infinite;will-change:transform}
-.tcol.c1 .tcol-track{animation-duration:24s}
-.tcol.c2 .tcol-track{animation-duration:30s}
-.tcol.c3 .tcol-track{animation-duration:27s}
-@keyframes scrollUp{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+.tcol-track{display:flex;flex-direction:column;gap:1.4rem;padding-bottom:1.4rem;will-change:transform}
 .tcard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem;display:flex;flex-direction:column;gap:1rem}
 .tcard .stars{color:#F5B301;letter-spacing:2px;font-size:1.05rem}
 .tcard p{font-style:italic;color:var(--body)}
@@ -869,6 +865,33 @@ sweep();
 addEventListener('load', sweep);
 addEventListener('scroll', sweep, { passive: true });
 addEventListener('resize', sweep);
+
+/* Testimonios: auto-scroll continuo por JS (no depende de animaciones CSS,
+   así se mueve siempre, incluso con "reducir movimiento" activado y NO se
+   detiene al pasar el mouse). */
+(function(){
+  const speeds = { c1: 28, c2: 22, c3: 25 }; // px por segundo
+  const tracks = [...document.querySelectorAll('.tcol-track')].map(el => {
+    const col = el.parentElement.classList.contains('c1') ? 'c1'
+              : el.parentElement.classList.contains('c2') ? 'c2' : 'c3';
+    return { el, speed: speeds[col] || 24, offset: 0 };
+  });
+  let last = null;
+  function tick(now){
+    if (last == null) last = now;
+    let dt = (now - last) / 1000; last = now;
+    if (dt > 0.1) dt = 0.016; // evita saltos al volver de segundo plano
+    tracks.forEach(t => {
+      const half = t.el.scrollHeight / 2;        // una copia (3 tarjetas + gap)
+      if (half > 0){
+        t.offset = (t.offset + t.speed * dt) % half;
+        t.el.style.transform = `translateY(${-t.offset}px)`;
+      }
+    });
+    requestAnimationFrame(tick);
+  }
+  if (tracks.length) requestAnimationFrame(tick);
+})();
 
 /* Año footer */
 document.getElementById('year').textContent = new Date().getFullYear();
