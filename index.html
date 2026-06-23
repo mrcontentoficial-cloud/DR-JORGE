@@ -211,14 +211,15 @@ section{position:relative}
 .blob{position:absolute;border-radius:50%;filter:blur(8px);z-index:-1}
 .blob.b1{width:280px;height:280px;background:radial-gradient(circle,var(--mint) 0%,transparent 70%);top:-40px;right:-40px;opacity:.6;animation:floaty 7s ease-in-out infinite}
 
-/* ===== Barra de confianza (bloques) ===== */
-.trust{padding:56px 0;background:var(--bg)}
-.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
-.trust-grid .t{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem 1.5rem;transition:.3s ease;position:relative;overflow:hidden}
-.trust-grid .t::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--brand-light),var(--brand));transform:scaleX(0);transform-origin:left;transition:.35s}
-.trust-grid .t:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
-.trust-grid .t:hover::before{transform:scaleX(1)}
+/* ===== Barra de confianza (rectángulo divisor) ===== */
+.trust{padding:0 0 60px;background:var(--bg)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow-lg);margin-top:-52px;position:relative;z-index:5}
+.trust-grid .t{background:var(--white);padding:1.9rem 1.6rem;transition:background .25s}
+.trust-grid .t:hover{background:var(--mint-soft)}
 .trust-grid .t .tic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--mint-soft),#fff);color:var(--brand-dark);border:1px solid var(--line);margin-bottom:1rem}
+.trust-grid .t:hover .tic{background:linear-gradient(135deg,#fff,var(--mint))}
 .trust-grid .t .tic svg{width:26px;height:26px}
 .trust-grid .t b{display:block;font-family:var(--font-display);font-size:1.1rem;color:var(--ink);margin-bottom:.25rem}
 .trust-grid .t span{font-size:.88rem;color:var(--muted)}
@@ -471,12 +472,12 @@ section{position:relative}
 
 <!-- ================= TRUST BAR ================= -->
 <section class="trust">
-  <div class="wrap trust-grid">
+  <div class="wrap"><div class="trust-grid">
     <div class="t reveal"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.95 5.5L12 16.5 7.05 18.2 8 12.7l-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><b>Alta especialidad</b><span>Cirugía gastrointestinal</span></div>
     <div class="t reveal d1"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Mínimamente invasiva</b><span>Técnica laparoscópica</span></div>
     <div class="t reveal d2"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 4.5C19 16.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><b>Trato humano</b><span>Acompañamiento cercano</span></div>
     <div class="t reveal d3"><span class="tic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><b>Respuesta ágil</b><span>Agenda en minutos</span></div>
-  </div>
+  </div></div>
 </section>
 
 <!-- ================= ESPECIALIDAD ================= -->
