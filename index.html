@@ -390,7 +390,14 @@ section{position:relative}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  .cards,.steps,.footer-grid{grid-template-columns:1fr}
+  .steps,.footer-grid{grid-template-columns:1fr}
+  /* Procedimientos: collage compacto 3x2 (no lista larga) */
+  .cards{grid-template-columns:repeat(3,1fr);gap:.7rem}
+  .cards .card{padding:1.1rem .6rem;text-align:center;border-radius:16px}
+  .cards .card .ic{width:44px;height:44px;border-radius:12px;margin:0 auto .6rem}
+  .cards .card .ic svg{width:23px;height:23px}
+  .cards .card h3{font-size:.84rem;line-height:1.18}
+  .cards .card p{display:none}
   /* Rectángulo de confianza y galería en 2 columnas (más compacto y variado) */
   .trust-grid,.stats{grid-template-columns:1fr 1fr}
   .trust-grid{margin-top:-40px}
