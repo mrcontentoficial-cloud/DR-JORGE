@@ -398,6 +398,13 @@ section{position:relative}
   .cards .card .ic svg{width:23px;height:23px}
   .cards .card h3{font-size:.84rem;line-height:1.18}
   .cards .card p{display:none}
+  /* Especialidad: 3 features como 2 arriba + 1 abajo (tarjetas) */
+  #especialidad .why-grid > div:not(.why-media){display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+  #especialidad .feature{flex-direction:column;text-align:center;align-items:center;margin:0;gap:.5rem;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.2rem .8rem}
+  #especialidad .feature:last-child{grid-column:1 / -1}
+  #especialidad .feature .ic{margin:0 auto}
+  #especialidad .feature h4{font-size:.92rem;margin-bottom:.15rem}
+  #especialidad .feature p{font-size:.8rem}
   /* Rectángulo de confianza y galería en 2 columnas (más compacto y variado) */
   .trust-grid,.stats{grid-template-columns:1fr 1fr}
   .trust-grid{margin-top:-40px}
