@@ -175,7 +175,7 @@ section{position:relative}
   display:inline-flex;align-items:center;gap:.5rem;
   background:var(--white);border:1px solid var(--line);
   color:var(--brand-dark);font-weight:700;font-size:.82rem;letter-spacing:.02em;
-  padding:.5rem 1rem;border-radius:999px;box-shadow:var(--shadow-sm);
+  padding:.5rem 1rem;border-radius:999px;box-shadow:var(--shadow-sm);white-space:nowrap;
 }
 .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--brand-light);box-shadow:0 0 0 4px rgba(22,184,138,.22);animation:pulse 2s infinite}
 .hero h1{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:800;margin:1.3rem 0 .4rem}
@@ -391,6 +391,8 @@ section{position:relative}
   .hero-head{order:1}
   .hero-media{order:2;width:100%;max-width:420px;margin:1.2rem auto 0}
   .hero-body{order:3;margin-top:1.4rem}
+  .eyebrow{font-size:clamp(.5rem,2.4vw,.64rem);letter-spacing:0;padding:.42rem .7rem;gap:.35rem}
+  .eyebrow .dot{width:6px;height:6px;box-shadow:0 0 0 3px rgba(22,184,138,.22)}
   .cards,.steps,.tcards{grid-template-columns:1fr 1fr}
   .trust-grid,.stats{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
