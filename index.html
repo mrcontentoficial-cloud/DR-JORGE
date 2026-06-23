@@ -412,16 +412,16 @@ section{position:relative}
   .steps .step h4{font-size:.84rem;line-height:1.18}
   .steps .step p{display:none}
   /* Pacientes: cascada en 3 columnas (más testimonios visibles) */
-  .tcols{gap:.55rem;max-height:560px}
-  .tcol{max-width:none}
+  .tcols{gap:.5rem;max-height:560px}
+  .tcol{max-width:none;min-width:0;flex:1 1 0}
   .tcol.c2,.tcol.c3{display:block}
-  .tcard{padding:.9rem;border-radius:14px;gap:.55rem}
-  .tcard .stars{font-size:.8rem;letter-spacing:1px}
-  .tcard p{font-size:.7rem;line-height:1.45}
-  .tcard .who{gap:.5rem}
-  .tcard .av{width:30px;height:30px;font-size:.7rem}
-  .tcard .who b{font-size:.72rem;line-height:1.2}
-  .tcard .who span{font-size:.64rem}
+  .tcard{padding:.75rem .7rem;border-radius:14px;gap:.5rem}
+  .tcard .stars{font-size:.78rem;letter-spacing:1px}
+  .tcard p{font-size:.68rem;line-height:1.4;overflow-wrap:break-word;hyphens:auto}
+  .tcard .who{gap:.4rem}
+  .tcard .av{width:28px;height:28px;font-size:.66rem;flex:none}
+  .tcard .who b{font-size:.7rem;line-height:1.15}
+  .tcard .who span{font-size:.6rem}
   /* Procedimientos: collage compacto 3x2 (no lista larga) */
   .cards{grid-template-columns:repeat(3,1fr);gap:.7rem}
   .cards .card{padding:1.1rem .6rem;text-align:center;border-radius:16px}
