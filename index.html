@@ -399,7 +399,12 @@ section{position:relative}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+/* Con "reducir movimiento": el contenido queda visible y los hovers/transiciones
+   siguen funcionando; solo apagamos los loops decorativos (flotar/parpadeo). */
+@media (prefers-reduced-motion:reduce){
+  .blob,.wa-float,.eyebrow .dot,.float-badge,.float-badge .ic{animation:none!important}
+  .reveal{opacity:1;transform:none}
+}
 
 /* ===== Responsive ===== */
 .nav-cta-mobile{display:none}
