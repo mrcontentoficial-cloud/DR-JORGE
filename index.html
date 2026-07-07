@@ -195,17 +195,19 @@ section{position:relative}
 
 /* ===== HERO (banner completo + textos en tarjeta encima) ===== */
 .hero{background:#fff}
-.hero-banner{position:relative;container-type:inline-size;max-width:1440px;margin:0 auto}
+.hero-banner{position:relative;container-type:inline-size;width:100%}
 .hero-banner>img{width:100%;height:auto;display:block}
-.hero-content{position:absolute;left:10%;top:38%;width:34%;font-size:1.3cqw}
-.hero-content .eyebrow{font-size:.88em;padding:.45em .85em;margin-bottom:.85em;gap:.4em;white-space:normal;line-height:1.2}
-.hero-content .eyebrow .dot{width:.6em;height:.6em;box-shadow:none}
-.hero-content .lead{font-size:1.08em;line-height:1.4;margin-bottom:.95em;color:var(--ink);text-shadow:0 1px 6px rgba(255,255,255,.95),0 0 2px rgba(255,255,255,.9)}
+.hero-content{position:absolute;left:8.5%;top:37%;width:33%;font-size:1.3cqw}
+.hero-content .lead{font-size:1.05em;line-height:1.4;margin-bottom:.9em;color:var(--ink);
+  background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.65);
+  border-radius:18px;padding:.85em 1.05em}
 .hero-content .hero-cta{display:flex;flex-wrap:wrap;gap:.55em;margin-bottom:.75em}
 .hero-content .btn{font-size:1em;padding:.7em 1.25em;box-shadow:0 8px 20px -8px rgba(0,0,0,.25)}
 .hero-content .btn svg{width:1.1em;height:1.1em}
-.hero-content .hero-note{font-size:.82em;margin-bottom:.9em;gap:.4em;color:var(--body)}
-.hero-content .hero-note svg{width:1.15em;height:1.15em}
+.hero-content .hero-note{font-size:.8em;margin-bottom:.9em;gap:.4em;color:var(--body);
+  display:inline-flex;width:fit-content;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.65);border-radius:999px;padding:.5em .9em}
+.hero-content .hero-note svg{width:1.15em;height:1.15em;flex:none}
 .hero-content .chips{display:flex;flex-wrap:wrap;gap:.5em;margin-top:0}
 .hero-content .chip{font-size:.82em;padding:.42em .75em}
 .hero-content .chip svg{width:1em;height:1em}
@@ -546,7 +548,6 @@ section{position:relative}
     <img src="assets/hero-banner.jpg" alt="Dr. Jorge Reyes Sánchez — Cirujano Gastrointestinal y Laparoscopista" />
     <div class="hero-content">
       <h1 class="sr-only">Dr. Jorge Reyes Sánchez — Cirugía Gastrointestinal y Laparoscópica en León e Irapuato</h1>
-      <span class="eyebrow reveal d1"><span class="dot"></span> Cirugía gastrointestinal de mínima invasión · León, Gto.</span>
       <p class="lead reveal d2">Atención quirúrgica de gran especialidad con técnicas mínimamente invasivas: menos dolor, recuperación más rápida y un trato humano de principio a fin.</p>
       <div class="hero-cta reveal d3">
         <a class="btn btn-wa btn-lg" href="https://wa.me/524775415614?text=Hola%20Dr.%20Jorge%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener">
