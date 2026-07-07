@@ -227,9 +227,10 @@ section{position:relative}
 .hero-media{position:relative}
 .photo-card{
   position:relative;border-radius:var(--radius);overflow:hidden;
-  aspect-ratio:4/5;background:linear-gradient(160deg,var(--brand-dark),var(--brand-darker));
+  aspect-ratio:1/1;background:#fff;
   box-shadow:var(--shadow-lg);border:8px solid #fff;
 }
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .photo-ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:.7rem;text-align:center;padding:2rem;color:rgba(255,255,255,.92)}
 .photo-ph .pic{width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;border:2px dashed rgba(255,255,255,.4)}
 .photo-ph .pic svg{width:60px;height:60px;opacity:.85}
@@ -243,7 +244,7 @@ section{position:relative}
 .float-badge .ic svg{width:22px;height:22px}
 .float-badge b{display:block;font-family:var(--font-display);color:var(--ink);font-size:1.15rem;line-height:1}
 .float-badge span{font-size:.78rem;color:var(--muted)}
-.fb-1{top:8%;left:-26px;animation:floaty 5s ease-in-out infinite}
+.fb-1{top:6%;right:-22px;animation:floaty 5s ease-in-out infinite}
 .fb-2{bottom:11%;right:-22px;animation:floaty 5s ease-in-out infinite .8s}
 .blob{position:absolute;border-radius:50%;filter:blur(8px);z-index:-1}
 .blob.b1{width:280px;height:280px;background:radial-gradient(circle,var(--mint) 0%,transparent 70%);top:-40px;right:-40px;opacity:.6;animation:floaty 7s ease-in-out infinite}
@@ -535,7 +536,7 @@ section{position:relative}
 <section class="hero" id="inicio">
   <div class="wrap hero-grid">
     <div class="hero-head">
-      <h1 class="hero-logo-h1 reveal d1"><img class="hero-logo" src="assets/logo-dr-jorge.png" alt="Dr. Jorge Reyes — Cirugía Gastrointestinal y Laparoscópica" /></h1>
+      <h1 class="sr-only">Dr. Jorge Reyes Sánchez — Cirugía Gastrointestinal y Laparoscópica en León e Irapuato</h1>
       <span class="eyebrow reveal"><span class="dot"></span> Cirugía gastrointestinal de mínima invasión · León, Gto.</span>
     </div>
     <div class="hero-body">
@@ -564,7 +565,7 @@ section{position:relative}
     <div class="hero-media reveal d2">
       <div class="blob b1"></div>
       <div class="photo-card">
-        <img src="assets/dr-jorge-portada.jpg" alt="Dr. Jorge Reyes Sánchez, cirujano gastrointestinal, en quirófano" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%" />
+        <img src="assets/hero-jorge.jpg" alt="Dr. Jorge Reyes Sánchez, cirujano gastrointestinal y laparoscopista" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain" />
       </div>
       <div class="float-badge fb-1">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.95 5.5L12 16.5 7.05 18.2 8 12.7l-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
